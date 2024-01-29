@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
+
+@keyframes animacao {
+    0%{
+        background-color: #76993d;
+    }
+
+    25%{
+        background-color: #87b344;
+    }
+
+    50%{
+        background-color: #c4e477;
+    }
+
+    100%{
+        background-color: #628a4c;
+    }
+
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #edf7c1;
+}
+
+.texto{
+    font-family: Inter;
+    font-size: 100px;
+    text-transform: uppercase;
+    animation: animacao 8s linear infinite alternate;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
